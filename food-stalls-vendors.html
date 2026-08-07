@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Stall Dandiya Event Pune 2026 | Vendor Stall Booking</title>
-    <meta name="description" content="Book premium dinner and flea market stalls at Dandiya Connect Pune 2026. High footfall guaranteed for food vendors, dessert stalls, traditional wear, and accessories in Pune.">
+    <title>Premium Dining at Dandiya Connect Pune 2026 | Exclusive Menu</title>
+    <meta name="description" content="Discover the Pure Vegetarian Premium Dinner menu at Dandiya Connect Pune 2026. A lavish festive menu included in all passes for an elite Garba experience.">
     
     <!-- Import Google Fonts & FontAwesome -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -137,7 +137,7 @@
             <nav class="festive-breadcrumbs">
                 <a href="index.html">Home</a>
                 <i class="fa-solid fa-chevron-right" style="font-size:0.7rem;"></i>
-                <span>Food Stall Dandiya Event Pune</span>
+                <span>Premium Dining Menu</span>
             </nav>
 
             <!-- Hero Section -->
@@ -194,7 +194,9 @@
                 </div>
             </div>
 
-            <!-- Cross-Link<!-- Master Footer -->
+            </div>
+    </div>
+    <!-- Master Footer -->
     <footer class="master-seo-footer">
         <div class="dandiya-container">
             <div class="footer-grid">
@@ -215,7 +217,7 @@
                     <h5>Partnerships & Business</h5>
                     <ul class="footer-links">
                         <li><a href="sponsorship.html">Sponsor Navratri Event Pune</a></li>
-                        <li><a href="food-stalls-vendors.html">Food Stall Dandiya Event Pune</a></li>
+                        <li><a href="food-stalls-vendors.html">Premium Dining Menu</a></li>
                         <li><a href="performers-artists.html">Perform at Dandiya Event Pune</a></li>
                         <li><a href="corporate-bookings.html">Invite-Only Dandiya Night Pune</a></li>
                     </ul>
@@ -238,20 +240,7 @@
 
     <!-- Scripts -->
     <script>
-        function handleStallSubmit(e) {
-            e.preventDefault();
-            alert("Stall booking request received! Our stall allocation team will reach out with availability and layout pricing.");
-        }
 
-        function setStallCategory(cat) {
-            var hidden = document.getElementById('stallTypeInput');
-            var trigger = document.getElementById('stallTrigger');
-            if (hidden && trigger) {
-                hidden.value = cat;
-                trigger.textContent = cat;
-                trigger.classList.add('has-value');
-            }
-        }
 
         (function() {
             var toggle = document.getElementById('mobileToggle');
@@ -263,37 +252,7 @@
             }
         })();
 
-        (function() {
-            var wrap = document.getElementById('stallDropdown');
-            if (!wrap) return;
-            var trigger = wrap.querySelector('.custom-select-trigger');
-            var options = wrap.querySelectorAll('.custom-option');
-            var hiddenInput = document.getElementById('stallTypeInput');
 
-            trigger.addEventListener('click', function(e) {
-                e.stopPropagation();
-                wrap.classList.toggle('open');
-            });
-
-            options.forEach(function(opt) {
-                opt.addEventListener('click', function(e) {
-                    e.stopPropagation();
-                    var val = this.getAttribute('data-value');
-                    hiddenInput.value = val;
-                    trigger.textContent = this.textContent;
-                    trigger.classList.add('has-value');
-
-                    options.forEach(function(o) { o.classList.remove('selected'); });
-                    this.classList.add('selected');
-
-                    wrap.classList.remove('open');
-                });
-            });
-
-            document.addEventListener('click', function() {
-                wrap.classList.remove('open');
-            });
-        })();
 
         (function() {
             var els = document.querySelectorAll('.reveal');
